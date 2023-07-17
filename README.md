@@ -77,7 +77,7 @@ Clone the repo and navigate to its directory:
 $ cd oas_parser_reborn
 ```
 
-Bump the latest version in `oas_parser_reborn/lib/oas_parser/version.rb`:
+Bump the latest version in `oas_parser_reborn/lib/oas_parser_reborn/version.rb`:
 
 ```
 //old

@@ -1,21 +1,18 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "oas_parser/version"
-
+require "oas_parser_reborn/version"
 Gem::Specification.new do |spec|
-  spec.name          = "oas_parser"
+  spec.name          = "oas_parser_reborn"
   spec.version       = OasParser::VERSION
-  spec.authors       = ["Adam Butler"]
-  spec.email         = ["adam@lab.io"]
+  spec.authors       = ["Adam Butler", "Mario Ruiz"]
+  spec.email         = ["adam@lab.io", "marioruizs@gmail.com"]
 
   spec.summary       = %q{A parser for Open API specifications}
-  spec.homepage      = "https://github.com/Nexmo/oas_parser"
+  spec.homepage      = "https://github.com/MarioRuiz/oas_parser_reborn"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
-  end
+  spec.files = Dir["lib/**/*", "Gemfile", "Rakefile", "README.md", "LICENSE.txt", "CHANGELOG.md"]
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]

@@ -2,10 +2,9 @@ require 'simplecov'
 SimpleCov.start
 
 require "bundler/setup"
-require "oas_parser"
-require "pry"
+require "oas_parser_reborn"
+#require "pry"
 require "rspec/collection_matchers"
-
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

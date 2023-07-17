@@ -31,7 +31,6 @@ module OasParser
     def path_by_path(path)
       definition = raw['paths'][path]
       return OasParser::Path.new(self, path, definition) if definition
-
       key = raw['paths'].keys.detect do |path_entry|
         Mustermann::Template.new(path_entry).match(path)
       end

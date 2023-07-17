@@ -8,12 +8,12 @@ require 'nokogiri'
 require 'addressable/uri'
 require 'deep_merge'
 
-require_relative 'oas_parser/path.rb'
-require_relative 'oas_parser/payload.rb'
-require_relative 'oas_parser/raw_accessor.rb'
-require_relative 'oas_parser/abstract_attribute.rb'
+require_relative 'oas_parser_reborn/path.rb'
+require_relative 'oas_parser_reborn/payload.rb'
+require_relative 'oas_parser_reborn/raw_accessor.rb'
+require_relative 'oas_parser_reborn/abstract_attribute.rb'
 
-Dir["#{File.dirname(__FILE__)}/oas_parser/**/*.rb"].each do |file|
+Dir["#{File.dirname(__FILE__)}/oas_parser_reborn/**/*.rb"].each do |file|
   require file
 end
 
